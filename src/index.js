@@ -154,8 +154,8 @@ class App extends Component {
                 'aria-label': 'Description',
               }}
             />
-            <Button size="small" color="primary">
-              Github
+            <Button onClick = {this.sendChat} size = "small" color="primary" >
+              Send
             </Button>
             <Button size="small" color="primary">
               Exit
