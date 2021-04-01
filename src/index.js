@@ -80,7 +80,10 @@ class App extends Component {
     }
 
   }
-
+  clear = ()=>{
+    this.setState({messages : []});
+  }
+  
   setChatInput = (event) => {
     this.setState({ chatInput: event.target.value })
   }
@@ -157,8 +160,8 @@ class App extends Component {
             <Button onClick = {this.sendChat} size = "small" color="primary" >
               Send
             </Button>
-            <Button size="small" color="primary">
-              Exit
+            <Button onClick = {this.clear} size="small" color="primary">
+              Clear Messages
             </Button>
           </CardActions>
         </Card>
